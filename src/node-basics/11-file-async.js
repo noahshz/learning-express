@@ -20,7 +20,7 @@ readFile('./content/subfolder/first.txt', 'utf8', (error, result) => {
             if(error) {
                 console.log(error);
                 return;
-            }
+            }a
             console.log(result);
         });
    });
