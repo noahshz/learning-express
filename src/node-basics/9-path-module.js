@@ -1,5 +1,5 @@
 /*
-    Build-In Path modules
+    Build-In Path module
 */
 
 const path = require('path');

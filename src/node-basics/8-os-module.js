@@ -1,5 +1,5 @@
 /*
-    Build-In Os modules
+    Build-In Os module
 */
 
 // require with module name
