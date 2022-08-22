@@ -6,3 +6,8 @@
 
 // global dependency - use it in any project
 // npm install -g <packageName>
+
+// package.json - manifest file (stores important info about project)
+// manual approach (create package.json in the root)
+// npm init
+// npm init -y (default)
