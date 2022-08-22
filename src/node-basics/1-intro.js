@@ -1,3 +1,5 @@
+// Intro
+
 console.log(`To run a node application just type "node" and then the filename :)`);
 
 const temperature = 21;
