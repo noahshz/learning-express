@@ -4,4 +4,5 @@ const greet = (name) => {
     console.log(`Hello ${name}`);
 }
 
+// default single export
 module.exports = greet;
