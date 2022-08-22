@@ -1,4 +1,6 @@
-// Globals
+/*
+ Globals
+*/
 
 // __dirname    - path to current directory
 console.log(__dirname);

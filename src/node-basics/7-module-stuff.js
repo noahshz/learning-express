@@ -1,4 +1,6 @@
-// module with no specific export but with running function
+/*
+ module with no specific export but with running function
+*/
 
 const num1 = 5;
 const num2 = 10;

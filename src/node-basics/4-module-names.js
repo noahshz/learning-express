@@ -1,4 +1,6 @@
-// Module for 3-modules.js
+/*
+ Module for 3-modules.js
+*/
 
 // local - not in exports
 const secret_name = "obama";

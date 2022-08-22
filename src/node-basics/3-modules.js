@@ -1,4 +1,6 @@
-// Modules
+/*
+ Modules
+*/
 
 //import values
 const names = require("./4-module-names");
