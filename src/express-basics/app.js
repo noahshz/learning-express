@@ -3,14 +3,14 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
+app.get('/',(req,res) => {
+
+});
+
+app.all('*',(req,res) => {
+    res.status(404).send('404 not found');
+});
+
 app.listen(PORT, () => {
     console.log(`server is listening on port ${PORT}...`);
 });
-
-// app.get
-// app.post
-// app.put
-// app.delete
-// app.all
-// app.use
-// app.listen
