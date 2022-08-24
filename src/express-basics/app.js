@@ -1,10 +1,15 @@
 const express = require('express');
 const app = express();
 
+const path = require('path');
+
 const PORT = process.env.PORT || 5000;
 
-app.get('/',(req,res) => {
+// express define, which ressources will be used -> folder path
+app.use(express.static('./public'));
 
+app.get('/',(req,res) => {
+    res.sendFile(path.resolve(__dirname, './samplesite/index.html'));
 });
 
 app.all('*',(req,res) => {
