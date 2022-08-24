@@ -29,25 +29,6 @@ app.get('/api/products/:productID', (req, res) => {
     return res.json(singleProduct);
 });
 
-// access query params
-app.get('/api/v1/query', (req, res) => {
-    const {search,limit} = req.query;
-    let sortedProducts = [...products]
-
-    // sortedProducts filter for products which starts with the search query param
-    if(search) {
-        sortedProducts = sortedProducts.filter((product) => {
-            return product.name.startsWith(search);
-        });
-    }
-    // sortedProducts limioted by query param
-    if(limit) {
-        sortedProducts = sortedProducts.slice(0,Number(limit));
-    }
-    res.status(200).json(sortedProducts);
-    res.send();
-});
-
 
 app.listen(5000, () => {
     console.log(`server is listening on port 5000...`);
