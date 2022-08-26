@@ -1,3 +1,5 @@
+// base route here: /example
+
 const express = require('express');
 const router = express.Router();
 
