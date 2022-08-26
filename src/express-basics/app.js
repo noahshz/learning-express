@@ -11,8 +11,6 @@ app.use(express.json());
 app.use('/api/users', user_router);
 app.use('/example', example_router);
 
-mongoose.connect("mongodb://localhost:27017", () => {});
-
 app.listen(5000,()=>{
     console.log(`Server is listening on port 5000...`);
 })
