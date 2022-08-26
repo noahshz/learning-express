@@ -15,5 +15,8 @@ router.post('/add', createUser)
 router.put('/edit/:uid', updateUser)
 router.delete('/delete/:uid', deleteUser)
 
+// example syntax
+// router.route('/').get(functoget).post(functopost)
+
 // exports router
 module.exports = router;

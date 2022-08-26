@@ -8,4 +8,7 @@ const {
 
 router.get('/', examplefunc);
 
+// example sync
+// router.route('/').get(examplefunc).post(examplefunc2).delete(functodelte)
+
 module.exports = router;
