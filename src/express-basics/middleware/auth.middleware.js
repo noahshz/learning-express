@@ -4,7 +4,7 @@ const auth = (req, res, next) => {
         req.user = {name:'noah',id:1};
         next();
     } else {
-        res.status(401).send('unautherize');
+        res.status(401).json({message: "unauthorized"});
     }
 }
 module.exports = auth;
