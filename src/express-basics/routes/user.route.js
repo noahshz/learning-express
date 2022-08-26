@@ -43,4 +43,5 @@ router.delete('/delete/:uid', (req,res) => {
     return res.status(200).json({success: true, message: "deleted succesfully", data: newUsers})
 })
 
+// exports router
 module.exports = router;
