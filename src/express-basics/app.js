@@ -1,12 +1,23 @@
 const express = require('express');
 const app = express();
 
-const morgan = require('morgan');
+let {users} = require('./data');
 
-app.use(morgan('tiny'));
+// parse form data
+app.use(express.urlencoded({extended: false}));
+// parse json data
+app.use(express.json());
 
-app.get('/',(req, res) => { 
-    res.json({message: "welcome"})
+app.get('/api/users', (req,res) => {
+    res.status(200).json(users);
+})
+
+app.post('/api/users/add', (req, res) => {
+    const {name} = req.body;
+    if(!name) {
+        return res.status(400).json({success: false, message: "please enter name"});
+    }
+    return res.status(201).json({success: true});
 })
 
 app.listen(5000,()=>{
